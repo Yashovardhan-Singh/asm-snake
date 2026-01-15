@@ -242,6 +242,7 @@ check_bounds:
 .reset:
     call init_list
     call spawn_fruit
+    mov byte [curr_len],1
     mov byte [curr_dir],4
     mov byte [next_dir],4
     ret
@@ -268,6 +269,7 @@ check_self_collision:
 .reset:
     call init_list
     call spawn_fruit
+    mov byte [curr_len],1
     mov byte [curr_dir],4
     mov byte [next_dir],4
 .exit:
